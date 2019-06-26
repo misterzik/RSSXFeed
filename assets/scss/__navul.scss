@@ -1,0 +1,58 @@
+/**
+ *
+ * NavUl CSS3 - Responsive Navigation, Using CSS3 & jQuery.
+ * Mainly used by The Insanen Team - www.insanen.com
+ * For small projects.
+ * www.insanen.com/github
+ *
+ */
+
+@mixin _navul_left {
+   display: block;
+   float: left;
+   overflow: auto;
+ }
+
+@mixin _navul_right {
+    display: block;
+    float: right;
+    overflow: auto;
+}
+
+.navul-left {
+  @include _navul_left;
+}
+
+.navul-right {
+  @include _navul_right;
+}
+
+.navul-icon {
+    color: #fff!important;
+        &:hover {
+            color: #c0c0c0!important;
+        }
+}
+
+._navul_isDeactive {
+  display: block;
+}
+
+._navul_isActive {
+  display: none;
+}
+
+ul#navul-menu {
+    list-style-type: none;
+    padding-left: 8rem;
+    padding-top: 3rem;
+}
+
+#navul-menu li a {
+    color: #009dff;
+    font-size: 31px;
+    border-bottom: 4px solid #fff;
+        &:hover {
+            border-bottom: 4px solid red;
+        }
+}

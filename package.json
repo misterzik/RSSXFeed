@@ -1,0 +1,29 @@
+{
+    "name": "rssxfeed",
+    "version": "1.0.0",
+    "description": "From The Vault - RSS Transformer",
+    "main": "index.php",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "rss",
+        "to",
+        "php",
+        "php"
+    ],
+    "author": "MisterZik <misterzik@insanen.com>",
+    "license": "MIT",
+    "dependencies": {
+        "grunt": "^1.0.1",
+        "grunt-contrib-compass": "^1.1.1",
+        "grunt-contrib-watch": "^1.0.0",
+        "icono": "^1.3.2",
+        "jquery": "^3.1.1",
+        "milligram": "^1.3.0",
+        "normalize.css": "^8.0.1"
+    },
+    "devDependencies": {
+        "php-server": "^0.2.1"
+    }
+}

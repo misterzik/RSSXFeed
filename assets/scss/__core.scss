@@ -1,0 +1,179 @@
+/**
+ *
+ * Colors Pallete
+ *
+ */
+$color-white: #fff;
+$color-black: #000;
+$color-babyblue: #f6f7fc;
+$color-babyblue-dark: #e6e6e6;
+$color-yellow: #ffc206;
+/**
+ *
+ * Rule Breakers
+ *
+ */
+@mixin Left {
+  margin-left: -10rem;
+}
+
+@mixin clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+/**
+ *
+ * Google Fonts
+ *
+ */
+@import url('https://fonts.googleapis.com/css?family=Gravitas+One');
+/**
+ *
+ * Form Bloackage of Cascade
+ *
+ */
+.jf-branding {
+    display: none!important;
+}
+.form-header {
+    display: none!important;
+    font-size: 0!important;
+}
+/**
+ *
+ * Navitation
+ *
+ */
+
+nav {
+    background: $color-black;
+    padding: 8px;
+    font-size: 26px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+._logo {
+  font-family: 'Gravitas One', cursive;
+  color: $color-yellow;
+  border-bottom: 3px solid $color-white;
+  font-size: 21px;
+  margin-left: 8rem;
+    &:hover{
+      border-bottom: 3px solid $color-yellow;
+    }
+}
+
+._icono-logo {
+   color: $color-yellow;
+   &:hover{
+     color: $color-white;
+   }
+ }
+
+._is_content {
+  background: $color-babyblue;
+  padding-top: 5.5rem;
+}
+
+.block-left {
+  background: $color-babyblue-dark;
+}
+
+.block-right {
+  background: $color-babyblue;
+}
+
+._is_Sticky {
+  position: fixed;
+}
+
+// Flips Image Vertically - MisterZik
+._logo_desc {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter:  "FlipH";
+    border-radius: 20px;
+    margin-top: 7px;
+}
+
+._logo_desc_overlap {
+  position: absolute;
+  left: 27px;
+  top: 26px;
+}
+
+._feed_desc_ins p > em a {
+    display: none;
+}
+
+a ._readMore {
+    margin-top: -4rem;
+    display: block;
+    font-size: 31px;
+
+    &:hover {
+        color: $color-black;
+    }
+}
+
+/**
+ *
+ * Footer
+ *
+ */
+ ._footer {
+     background: $color-black;
+     height: 50px;
+     margin-top: 0rem;
+     padding: 11px;
+ }
+
+ ._footer_logo {
+     margin-top: 5px;
+     display: block;
+     width: 140px;
+     height: 21px;
+     background: url(../images/we-love-insanen.png);
+     margin-left: 8rem;
+        &:hover {
+              background: url(../images/we-love-insanen-pink.png);
+        }
+ }
+
+ /**
+  *
+  * Media Queries
+  *
+  */
+
+/* Landscape phones and portrait tablets */
+$landscape-phones-portrait: 767px;
+$portrait-phones-smaller: 480px;
+
+@media (max-width: $landscape-phones-portrait) {
+  .container {
+      padding: 0!important;
+  }
+  ._logo {
+    margin-left: 0rem!important;
+  }
+  ._logo_desc_overlap {
+    left: 18px!important;
+    width: 170px;
+  }
+  .row .column.column-50 {
+    max-width: 100%!important;
+  }
+  .row .column.column-25 {
+    max-width: 100%!important;
+    background: #e8f3ff!important;
+  }
+  ul#navul-menu {
+    padding-left: 0rem!important;
+  }
+}
